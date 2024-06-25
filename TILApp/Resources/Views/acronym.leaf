@@ -1,0 +1,10 @@
+<!-- acronym.leaf-->
+<!-- Created by Михаил Егоров on 24.06.2024. -->
+
+#extend("base"):
+  #export("content"):
+    <h1>#(acronym.short)</h1>
+    <h2>#(acronym.long)</h2>
+    <p>Created by <a href="/users/#(user.id)/">#(user.name)</a></p>
+  #endexport
+#endextend
